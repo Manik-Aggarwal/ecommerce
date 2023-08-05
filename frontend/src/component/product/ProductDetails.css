@@ -1,0 +1,130 @@
+.container{
+    margin-top: 3%;
+}
+
+.ProductDetails{
+    margin-top: 200px;
+    width: 100vw;
+    background-color: rgb(214, 214, 214);
+    display: flex;
+    box-sizing: border-box;
+}
+
+.ProductDetails > div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    box-sizing: border-box;
+    border: 2px solid white;
+}
+
+div hr{
+    width: 100%;
+    margin: 10px 0;
+    border-top: 2px solid black;
+}
+.productdetailicon{
+    transform: scale(1.5);
+    margin: 5px;
+    margin-left: 40%;
+}
+
+div > p{
+    text-align: center;
+}
+
+.carimg{
+    width: 50%;
+    margin: auto 0;
+}
+    
+.submitDialog {
+    display: flex;
+    flex-direction: column;
+  }
+  .submitDialogTextArea {
+    border: 1px solid rgba(0, 0, 0, 0.082);
+    margin: 1vmax 0;
+    outline: none;
+    padding: 1rem;
+    font: 300 1rem "Roboto";
+  }
+
+.detailsBlock-2-span{
+    font: 200 1vmax cursive;
+}
+
+@media screen and (max-width: 375px){
+    .addtocartbtn,
+    .detailsBlock-3,
+    .features,
+    .submit-review,
+    .inputandcart{
+        flex-direction: column;
+        margin: auto;
+    }
+    .submit-review,.productPrice,.inputbtn{
+        margin: 20px auto;
+    }
+}
+
+.reviewCardComment{
+    font: 200 1vmax cursive;
+}
+
+.reviewCard{
+    box-shadow: rgb(0, 0, 0) 0px 0px 10px;
+}
+
+.reviews::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+/* ////////////////////////////////Pagination////////////////////////////////// */
+.pagination{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+.page-item{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+@media  screen and (max-width: 350px){
+    .page-item{
+        padding: 0.3rem 0.3rem;
+    }
+}
+
+.page-item:last-child{
+    border-radius: 0 8px 8px 0;
+}
+.page-item:first-child{
+    border-radius: 8px 0 0 8px;
+}
+
+.page-link{
+    color: black;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.page-item:hover{
+    background-color: rgb(230, 230, 230);
+}
+
+.page-item:hover .page-link{
+    color: rgb(80, 80, 80);
+}
+
+.pageItemActive{
+    background-color: #42a5f5;
+}
+.pageLinkActive{
+    color: white;
+}

@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    cursor: url("./images/cursor.png"), auto;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+/* for firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.redColor{
+    color: red !important;
+}
+
+.greenColor{
+    color: green !important;
+}
